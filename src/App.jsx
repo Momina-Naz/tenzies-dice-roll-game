@@ -80,7 +80,7 @@ function hold(id) {
     <div className="dice-container">
     {diceElements}
     </div>
-    <button ref={buttonRef} className="roll-dice" onClick={rollDice}>
+    <button ref={buttonRef}  onClick={rollDice}>
                 {gameWon ? "New Game" : "Roll"}
             </button>
    </main>
