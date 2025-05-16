@@ -18,18 +18,6 @@ export default function App(){
 }, [gameWon])
 
   function generateAllNewDice(){
-  //   const newDice = []
-  //   for(let i =0; i<10  ; i++){
-  //     const rand = Math.ceil (Math.random()*6)
-  //     newDice.push(rand)
-  //   }
-  //   return(
-  //      console.log(newDice)
-  //   )
-  // }
-  // generateAllNewDice()
-  //modern way to do it
-  
   return new Array(10).fill(0)
   //when using object in function surround it with braces
   .map(()=>({value:Math.ceil(Math.random()*6),
@@ -39,7 +27,6 @@ export default function App(){
   }
 
 
- // for every random number in the random number key call the function dice with that number value
  function rollDice() {
   if (!gameWon) {
       setDice(oldDice => oldDice.map(die =>
